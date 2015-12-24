@@ -65,6 +65,7 @@
 				interrupts = <17 2>; /* high-to-low edge triggered */
 				interrupt-parent = <&gpio>;
 				pendown-gpio = <&gpio 17 0>;
+				ti,swap-xy = <0>;
 				ti,x-plate-ohms = /bits/ 16 <60>;
 				ti,pressure-max = /bits/ 16 <255>;
 			};
@@ -76,6 +77,6 @@
 		rotate =  <&waveshare32b>,"rotate:0";
 		fps =     <&waveshare32b>,"fps:0";
 		debug =   <&waveshare32b>,"debug:0";
-		swapxy =  <&waveshare32b_ts>,"swap-xy?";
+		swapxy =  <&waveshare32b_ts>,"swap-xy:0";
 	};
 };
